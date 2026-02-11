@@ -1,0 +1,52 @@
+<div style="padding: 2rem; max-width: 1200px; margin: 0 auto;">
+  <h1>Angular + Stencil Design System Test</h1>
+  <p>Testing local Stencil components with Angular wrapper using portal: protocol</p>
+
+  <div style="margin-top: 2rem;">
+    <h2>Button Examples</h2>
+    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+      <cor-button>
+        <button>Default Button</button>
+      </cor-button>
+      <cor-button variant="primary">
+        <button>Primary Button</button>
+      </cor-button>
+      <cor-button variant="secondary">
+        <button>Secondary Button</button>
+      </cor-button>
+    </div>
+  </div>
+
+  <div style="margin-top: 2rem;">
+    <h2>Typography Example</h2>
+    <cor-typography variant="h1">
+      <h1>Heading 1</h1>
+    </cor-typography>
+    <cor-typography variant="body">
+      <p>This is body text using the Stencil typography component.</p>
+    </cor-typography>
+  </div>
+
+  <div style="margin-top: 2rem;">
+    <h2>Icon Example</h2>
+    <cor-icon name="add" size="lg"></cor-icon>
+    <cor-icon name="settings" size="md"></cor-icon>
+    <cor-icon name="close" size="sm"></cor-icon>
+  </div>
+
+  <div style="margin-top: 2rem;">
+    <h2>Separator Example</h2>
+    <cor-separator></cor-separator>
+  </div>
+
+  <div style="margin-top: 2rem;">
+    <h2>Grid Example</h2>
+    <cor-grid columns="3" gap="md">
+      <div style="padding: 1rem; background: #f0f0f0;">Grid Item 1</div>
+      <div style="padding: 1rem; background: #f0f0f0;">Grid Item 2</div>
+      <div style="padding: 1rem; background: #f0f0f0;">Grid Item 3</div>
+    </cor-grid>
+  </div>
+</div>
+
+<router-outlet />

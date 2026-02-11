@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Import Stencil Design System styles */
+@import '@respec/design-system/dist/design-system/design-system.css';
+@import '@respec/design-system/dist/design-system/tokens/core.tokens.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
