@@ -19,7 +19,6 @@
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
     "@respec/angular-design-system": "portal:../design-respec/angular-design-system",
-    "@respec/design-system": "portal:../design-respec",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"

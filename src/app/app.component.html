@@ -1,10 +1,16 @@
-<div style="padding: 2rem; max-width: 1200px; margin: 0 auto;">
+<div style="padding: 2rem; max-width: 1200px; margin: 0 auto">
   <h1>Angular + Stencil Design System Test</h1>
-  <p>Testing local Stencil components with Angular wrapper using portal: protocol</p>
+  <p>
+    Testing local Stencil components with Angular wrapper using portal: protocol
+  </p>
 
-  <div style="margin-top: 2rem;">
+  <app-test-debug></app-test-debug>
+
+  <hr style="margin: 2rem 0" />
+
+  <div style="margin-top: 2rem">
     <h2>Button Examples</h2>
-    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+    <div style="display: flex; gap: 1rem; margin-top: 1rem">
       <cor-button>
         <button>Default Button</button>
       </cor-button>
@@ -17,34 +23,43 @@
     </div>
   </div>
 
-  <div style="margin-top: 2rem;">
+  <div style="margin-top: 2rem">
     <h2>Typography Example</h2>
-    <cor-typography variant="h1">
-      <h1>Heading 1</h1>
-    </cor-typography>
-    <cor-typography variant="body">
-      <p>This is body text using the Stencil typography component.</p>
+    <cor-typography variant="heading-xl"><div>Hello</div></cor-typography>
+    <cor-typography variant="body-lg">
+      <div>This is body text using the Stencil typography component.</div>
     </cor-typography>
   </div>
 
-  <div style="margin-top: 2rem;">
+  <div style="margin-top: 2rem">
     <h2>Icon Example</h2>
-    <cor-icon name="add" size="lg"></cor-icon>
-    <cor-icon name="settings" size="md"></cor-icon>
-    <cor-icon name="close" size="sm"></cor-icon>
+    <cor-icon name="carbon:add" size="lg"></cor-icon>
+    <cor-icon name="carbon:settings" size="md"></cor-icon>
+    <cor-icon name="carbon:close" size="sm"></cor-icon>
   </div>
 
-  <div style="margin-top: 2rem;">
+  <div style="margin-top: 2rem">
     <h2>Separator Example</h2>
-    <cor-separator></cor-separator>
+    <cor-separator variant="divider"></cor-separator>
   </div>
 
-  <div style="margin-top: 2rem;">
+  <div style="margin-top: 2rem">
     <h2>Grid Example</h2>
-    <cor-grid columns="3" gap="md">
-      <div style="padding: 1rem; background: #f0f0f0;">Grid Item 1</div>
-      <div style="padding: 1rem; background: #f0f0f0;">Grid Item 2</div>
-      <div style="padding: 1rem; background: #f0f0f0;">Grid Item 3</div>
+    <cor-grid container>
+      <cor-grid size="8"><div style="padding: 1rem; background: #f0f0f0">
+          Grid Item 1
+        </div></cor-grid>
+      <cor-grid size="4"><div style="padding: 1rem; background: #f0f0f0">
+          Grid Item 2
+        </div></cor-grid>
+
+      <cor-grid size="4"><div style="padding: 1rem; background: #f0f0f0">
+          Grid Item 3
+        </div></cor-grid>
+
+      <cor-grid size="8"><div style="padding: 1rem; background: #f0f0f0">
+          Grid Item 4
+        </div></cor-grid>
     </cor-grid>
   </div>
 </div>
